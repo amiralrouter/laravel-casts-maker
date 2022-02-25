@@ -80,7 +80,7 @@ function writeCasts(page_content ){
 	return page_content;
 }
 
-function toggleButton(){
+function toggleButton(button){
 	// get the active page language
 	let editor = vscode.window.activeTextEditor;
 	if (!editor) {
@@ -132,11 +132,15 @@ function activate(context) {
 	button.command = 'laravel-casts-maker.fixCasts';
 	button.show();
 
-	toggleButton();
+	toggleButton(button);
  
 	// when language is changed
 	vscode.workspace.onDidChangeConfiguration(function() {
-		toggleButton();
+		toggleButton(button);
+	});
+	// on page changed
+	vscode.window.onDidChangeActiveTextEditor(function() {
+		toggleButton(button);
 	});
 }
 

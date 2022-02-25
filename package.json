@@ -2,7 +2,7 @@
   "name": "laravel-casts-maker",
 	"displayName": "Laravel Casts Maker",
 	"description": "Fill casts automaticly with attributes list",
-	"version": "0.0.1",
+	"version": "1.0.2",
 	"publisher": "amiralrouter",
 	"author": {
 		"name" : "Amiral Router"
@@ -12,7 +12,7 @@
 		"type": "git",
 		"url": "https://github.com/amiralrouter/hyper-rehost"
 	},
-	"icon": "icon.png",
+	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.64.0"
 	},
@@ -20,7 +20,7 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:laravel-casts-maker.fixCasts"
+        "*"
 	],
 	"main": "./extension.js",
 	"contributes": {
