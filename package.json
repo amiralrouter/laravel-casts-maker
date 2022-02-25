@@ -2,7 +2,7 @@
   "name": "laravel-casts-maker",
 	"displayName": "Laravel Casts Maker",
 	"description": "Fill casts automaticly with attributes list",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"publisher": "amiralrouter",
 	"author": {
 		"name" : "Amiral Router"
