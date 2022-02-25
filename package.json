@@ -27,7 +27,13 @@
 		"commands": [{
             "command": "laravel-casts-maker.fixCasts",
             "title": "Fix Casts"
-		}]
+		}],
+		"keybindings" : {
+			"keybindings": [{
+				"command": "laravel-casts-maker.fixCasts",
+				"key": "ctrl+l+c"
+			}]
+		}
 	},
 	"scripts": {
 		"lint": "eslint .",
